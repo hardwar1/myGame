@@ -1,0 +1,183 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 5em;
+  background-repeat: no-repeat;
+
+  -webkit-animation: ghoust 5s;
+     -moz-animation: ghoust 5s;
+       -o-animation: ghoust 5s;
+          animation: ghoust 5s;
+}
+
+@keyframes ghoust {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+h1, h3 {
+  margin: 10px auto;
+  background-color: white;
+  text-align: center;
+}
+
+h3{
+  width: 100%
+}
+
+.scrollOff{
+  overflow: hidden;
+}
+
+.flex1{
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+#board{
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  margin: 20px auto;
+  background-color: white;
+  border: 1px solid grey;
+  font-size: 20px;
+}
+
+.control_panel{
+  background-color: white;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.game_btn {
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 15%;
+  padding: 15px;
+  margin: 15px;
+}
+
+.div_btn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.div_btn_lust{
+  padding-left: 22px;
+}
+
+#btn0 {
+  margin-left: 28px;
+}
+
+#bspace{
+  margin-left: 17px;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+
+.modal {
+  display: block;
+  width: 700px;
+  max-width: 100%;
+  height: 300px;
+  max-height: 100%;
+  position: fixed;
+
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+.closed {
+  display: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-guts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 50px 20px 20px;
+}
+
+.modal .close-button {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 20px;
+
+  border: 0;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+}
+
+.open-button {
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: lightgreen;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 21px;
+
+
+}
+
+/* СЛАЙДЕР */
+.body1{
+  background-image: url('../images/1.jpg');
+}
+.body2{
+  background-image: url('../images/2.jpg');
+}
+.body3{
+  background-image: url('../images/3.jpg');
+}
+.body4{
+  background-image: url('../images/4.jpg');
+}
+.body5{
+  background-image: url('../images/5.jpg');
+}
+.body6{
+  background-image: url('../images/6.jpg');
+}
+.body7{
+  background-image: url('../images/7.jpg');
+}

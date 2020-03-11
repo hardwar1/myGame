@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/header.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  <title>Быки Коровы</title>
+</head>
+<body id="body">
+  <header>
+    <nav>
+      <button id="start" type="button" name="button" class="btn">Начать игру</button>
+      <button disabled id="surrender" type="button" name="button" class="btn">Сдаться</button>
+      <button id="open-button" type="button" name="button" class="btn">Правила</button>
+      <button disabled type="button" name="button" class="btn">map</button>
+      <button disabled type="button" name="button" class="btn">top</button>
+      <button disabled type="button" name="button" class="btn">top</button>
+    </nav>
+  </header>
+  <div class="zindex10">
+    <div class="flex1">
+      <h1>Игра "Быки Коровы"</h1>
+    </div>
+    <div class="flex1">
+      <h1 id="findNumber">XXXX</h1>
+    </div>
+
+    <div id="board">
+      xxxx
+    </div>
+    <section class="zindex10 control_panel">
+      <div class="div_btn">
+        <button disabled class="game_btn" id="btn1" type="button" name="button">1</button>
+        <button disabled class="game_btn" id="btn2" type="button" name="button">2</button>
+        <button disabled class="game_btn" id="btn3" type="button" name="button">3</button>
+      </div>
+      <div class="div_btn">
+        <button disabled class="game_btn" id="btn4" type="button" name="button">4</button>
+        <button disabled class="game_btn" id="btn5" type="button" name="button">5</button>
+        <button disabled class="game_btn" id="btn6" type="button" name="button">6</button>
+      </div>
+      <div class="div_btn">
+        <button disabled class="game_btn" id="btn7" type="button" name="button">7</button>
+        <button disabled class="game_btn" id="btn8" type="button" name="button">8</button>
+        <button disabled class="game_btn" id="btn9" type="button" name="button">9</button>
+      </div>
+      <div class="div_btn_lust">
+        <button disabled class="game_btn" id="enter" type="button" name="button">Enter</button>
+        <button disabled class="game_btn" id="btn0" type="button" name="button">0</button>
+        <button disabled class="game_btn" id="bspace" type="button" name="button">bspace</button>
+      </div>
+    </section>
+    <div class="control_panel" id="resultTurn">
+
+    </div>
+    <div class="modal closed" id="modal" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription" role="dialog">
+      <button class="close-button" id="close-button" title="Закрыть модальное окно">Закрыть</button>
+      <div class="modal-guts" role="document">
+        <h1>Правила игры</h1>
+        <p>
+          Компьютер задумывает четыре различные цифры из 0,1,2,...9. Игрок делает ходы, чтобы узнать эти цифры и их порядок. Каждый ход состоит из четырёх цифр, 0 может стоять на первом месте. В ответ компьютер показывает число отгаданных цифр, стоящих на своих местах (число быков) и число отгаданных цифр, стоящих не на своих местах (число коров).
+          <br><br>
+          Пример: <br>
+          Компьютер задумал 0834. Игрок сделал ход 8134. Компьютер ответил: 2 быка (цифры 3 и 4) и 1 корова (цифра 8).
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  <p id="temp">xx</p>
+  </div>
+</body>
+</html>
